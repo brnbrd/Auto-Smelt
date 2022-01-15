@@ -1,0 +1,19 @@
+modLoader="javafml" #mandatory
+loaderVersion="[39,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+
+[[mods]] #mandatory
+modId="autosmelt" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="Auto-Smelt" #mandatory
+logoFile="autosmelt.png" #optional
+credits="onVoid" #optional
+authors="onVoid" #optional
+description='''Some additional content.'''
+
+[[dependencies.simplicity]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[39,)" #mandatory
+    ordering="NONE"
+    side="BOTH"

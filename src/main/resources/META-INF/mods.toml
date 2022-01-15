@@ -6,10 +6,15 @@ license="All rights reserved"
 modId="autosmelt" #mandatory
 version="${file.jarVersion}" #mandatory
 displayName="Auto-Smelt" #mandatory
+displayURL="https://www.curseforge.com/minecraft/mc-mods/auto-smelt"
+updateJSONURL="https://onvoid.net/autosmelt/update.json"
 logoFile="autosmelt.png" #optional
+logoBlur=false
 credits="onVoid" #optional
 authors="onVoid" #optional
-description='''Some additional content.'''
+description="Adds a simple enchantment to automatically smelt broken blocks."
+itemIcon="minecraft:enchanted_book"
+configBackground="minecraft:textures/block/bookshelf.png"
 
 [[dependencies.simplicity]] #optional
     modId="forge" #mandatory

@@ -1,4 +1,4 @@
 {
   "enchantment.autosmelt.auto-smelt": "Auto-Smelt",
-  "enchantment.autosmelt.auto-smelt.desc": "Converts collected blocks into their cooked counterpart."
+  "enchantment.autosmelt.auto-smelt.desc": "Converts reaped blocks or items into their cooked counterpart."
 }

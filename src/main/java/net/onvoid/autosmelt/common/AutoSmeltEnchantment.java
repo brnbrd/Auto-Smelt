@@ -6,7 +6,7 @@ import net.minecraft.world.item.enchantment.Enchantments;
 
 public class AutoSmeltEnchantment extends Enchantment {
     protected AutoSmeltEnchantment() {
-        super(Rarity.VERY_RARE, AutoSmeltEnchantmentCategory.PICKAXE_SHOVEL, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
+        super(Rarity.VERY_RARE, AutoSmeltEnchantmentCategory.SMELTERS, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
     }
 
     public int getMinCost(int p_45264_) {

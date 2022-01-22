@@ -17,7 +17,6 @@ public class AutoSmelt
 
     public AutoSmelt() {
         instance = this;
-
         proxy = DistExecutor.safeRunForDist(() -> ClientProxy::new, () -> CommonProxy::new);
         proxy.start();
     }

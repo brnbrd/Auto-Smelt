@@ -13,11 +13,11 @@ logoFile="autosmelt.png" #optional
 logoBlur=false
 credits="onVoid" #optional
 authors="onVoid" #optional
-description="Adds a simple enchantment to automatically smelt broken blocks."
+description="Adds a simple enchantment to automatically smelt drops from anything broken or killed."
 itemIcon="minecraft:enchanted_book"
 configBackground="minecraft:textures/block/bookshelf.png"
 
-[[dependencies.simplicity]] #optional
+[[dependencies.autosmelt]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
     versionRange="[39,)" #mandatory

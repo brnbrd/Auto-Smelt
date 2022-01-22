@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "entries": [
+    "autosmelt:smelt",
+    "autosmelt:smelt_entity"
+  ]
+}

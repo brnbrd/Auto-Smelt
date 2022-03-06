@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[39,)"
+loaderVersion="[40,)"
 license="MIT License"
 issueTrackerURL="https://github.com/onVoid/Auto-Smelt/issues"
 
@@ -20,6 +20,6 @@ configBackground="minecraft:textures/block/bookshelf.png"
 [[dependencies.autosmelt]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[39,)" #mandatory
+    versionRange="[40,)" #mandatory
     ordering="NONE"
     side="BOTH"

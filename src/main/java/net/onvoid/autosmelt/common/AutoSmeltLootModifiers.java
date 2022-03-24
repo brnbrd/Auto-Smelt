@@ -9,10 +9,9 @@ import net.onvoid.autosmelt.AutoSmelt;
 
 public class AutoSmeltLootModifiers {
 
-    private static final DeferredRegister<GlobalLootModifierSerializer<?>> LOOT_MODIFIERS = DeferredRegister.create(ForgeRegistries.LOOT_MODIFIER_SERIALIZERS, AutoSmelt.MODID);
+    private static final DeferredRegister<GlobalLootModifierSerializer<?>> LOOT_MODIFIERS = DeferredRegister.create(ForgeRegistries.Keys.LOOT_MODIFIER_SERIALIZERS, AutoSmelt.MODID);
 
-    public static final RegistryObject<SmeltLootModifier.Serializer> SMELT = LOOT_MODIFIERS.register("smelt",
-            SmeltLootModifier.Serializer::new);
+    public static final RegistryObject<SmeltLootModifier.Serializer> SMELT = LOOT_MODIFIERS.register("smelt", SmeltLootModifier.Serializer::new);
 
     public static void create(IEventBus bus) {
         LOOT_MODIFIERS.register(bus);

@@ -1,0 +1,117 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "mekanismtools:wood_paxel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:stone_paxel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:iron_paxel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:gold_paxel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:diamond_paxel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:netherite_paxel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:bronze_paxel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:lapis_lazuli_paxel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:osmium_paxel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_paxel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_obsidian_paxel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:steel_paxel",
+      "required": false
+    },
+    {
+      "id": "easypaxellite:wood_paxel",
+      "required": false
+    },
+    {
+      "id": "easypaxellite:stone_paxel",
+      "required": false
+    },
+    {
+      "id": "easypaxellite:golden_paxel",
+      "required": false
+    },
+    {
+      "id": "easypaxellite:iron_paxel",
+      "required": false
+    },
+    {
+      "id": "easypaxellite:diamond_paxel",
+      "required": false
+    },
+    {
+      "id": "easypaxellite:netherite_paxel",
+      "required": false
+    },
+    {
+      "id": "gobber2:gobber2_paxel",
+      "required": false
+    },
+    {
+      "id": "gobber2:gobber2_paxel_end",
+      "required": false
+    },
+    {
+      "id": "gobber2:gobber2_paxel_nether",
+      "required": false
+    },
+    {
+      "id": "gobber2:gobber2_paxel_stars",
+      "required": false
+    },
+    {
+      "id": "mysticalagradditions:imperium_paxel",
+      "required": false
+    },
+    {
+      "id": "mysticalagradditions:inferium_paxel",
+      "required": false
+    },
+    {
+      "id": "mysticalagradditions:prudentium_paxel",
+      "required": false
+    },
+    {
+      "id": "mysticalagradditions:supremium_paxel",
+      "required": false
+    },
+    {
+      "id": "mysticalagradditions:tertium_paxel",
+      "required": false
+    },
+    {
+      "id": "mysticaladaptations:insanium_paxel",
+      "required": false
+    }
+  ]
+}

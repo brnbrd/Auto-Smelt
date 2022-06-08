@@ -1,7 +1,7 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[41,)"
 license="MIT License"
-issueTrackerURL="https://github.com/onVoid/Auto-Smelt/issues"
+issueTrackerURL="https://github.com/brdle/Auto-Smelt/issues"
 
 [[mods]] #mandatory
 modId="autosmelt" #mandatory
@@ -11,8 +11,8 @@ displayURL="https://www.curseforge.com/minecraft/mc-mods/auto-smelt"
 updateJSONURL="https://onvoid.net/autosmelt/update.json"
 logoFile="autosmelt.png" #optional
 logoBlur=false
-credits="onVoid" #optional
-authors="onVoid" #optional
+credits="brdle" #optional
+authors="brdle" #optional
 description="Adds a simple enchantment to automatically smelt drops from anything broken or killed."
 itemIcon="minecraft:enchanted_book"
 configBackground="minecraft:textures/block/bookshelf.png"
@@ -20,6 +20,6 @@ configBackground="minecraft:textures/block/bookshelf.png"
 [[dependencies.autosmelt]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[40,)" #mandatory
+    versionRange="[41,)" #mandatory
     ordering="NONE"
     side="BOTH"

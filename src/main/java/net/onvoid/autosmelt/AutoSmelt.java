@@ -8,8 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @Mod("autosmelt")
-public class AutoSmelt
-{
+public class AutoSmelt {
     public static final String MODID = "autosmelt";
     public static AutoSmelt instance;
     public static CommonProxy proxy;
@@ -19,5 +18,9 @@ public class AutoSmelt
         instance = this;
         proxy = DistExecutor.safeRunForDist(() -> ClientProxy::new, () -> CommonProxy::new);
         proxy.start();
+    }
+
+    public static Logger getLogger() {
+        return LOGGER;
     }
 }

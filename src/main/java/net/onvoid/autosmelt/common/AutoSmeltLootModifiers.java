@@ -1,6 +1,7 @@
 package net.onvoid.autosmelt.common;
 
-import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
+import com.mojang.serialization.Codec;
+import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -9,12 +10,12 @@ import net.onvoid.autosmelt.AutoSmelt;
 
 public class AutoSmeltLootModifiers {
 
-    private static final DeferredRegister<GlobalLootModifierSerializer<?>> LOOT_MODIFIERS = DeferredRegister.create(ForgeRegistries.Keys.LOOT_MODIFIER_SERIALIZERS, AutoSmelt.MODID);
+    private static final DeferredRegister<Codec<? extends IGlobalLootModifier>> GLM = DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, AutoSmelt.MODID);
 
-    public static final RegistryObject<SmeltLootModifier.Serializer> SMELT = LOOT_MODIFIERS.register("smelt", SmeltLootModifier.Serializer::new);
+    public static final RegistryObject<Codec<SmeltLootModifier>> SMELT = GLM.register("smelt", () -> SmeltLootModifier.CODEC);
 
     public static void create(IEventBus bus) {
-        LOOT_MODIFIERS.register(bus);
+        GLM.register(bus);
     }
 
 }

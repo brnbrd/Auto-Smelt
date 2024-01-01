@@ -7,7 +7,6 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeType;
-import net.minecraft.world.item.crafting.SmeltingRecipe;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -39,13 +38,13 @@ public class SmeltLootModifier extends LootModifier {
         return generatedLoot.stream().map(stack -> {
             var smelted = context.getLevel().getRecipeManager()
               .getRecipeFor(RecipeType.SMELTING, new SimpleContainer(stack), context.getLevel())
-              .map(SmeltingRecipe::getResultItem)
+              .map(recipe -> recipe.getResultItem(context.getLevel().registryAccess()))
               .filter(itemStack -> !itemStack.isEmpty())
               .map(itemStack -> ItemHandlerHelper.copyStackWithSize(itemStack, stack.getCount() * itemStack.getCount()))
               .orElse(stack);
-            if (smelted != stack) {
+            /*if (smelted != stack) {
                 ExperienceOrb.award(context.getLevel(), context.getParam(LootContextParams.ORIGIN), context.getRandom().nextInt(3) + 1);
-            }
+            } // too easy to grind XP */
             return smelted;
         }).collect(ObjectArrayList.toList());
     }

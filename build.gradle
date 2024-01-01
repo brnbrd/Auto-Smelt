@@ -1,17 +1,8 @@
-buildscript {
-    repositories {
-        // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
-        gradlePluginPortal()
-        maven { url = 'https://maven.neoforged.net/releases' }
-    }
-    dependencies {
-        classpath group: 'net.neoforged.gradle', name: 'ForgeGradle', version: '[6.0.13, 6.2)', changing: true
-    }
+plugins {
+    id 'eclipse'
+    id 'maven-publish'
+    id 'net.neoforged.gradle' version '[6.0.13, 6.2)'
 }
-apply plugin: 'net.neoforged.gradle'
-// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
-apply plugin: 'eclipse'
-apply plugin: 'maven-publish'
 
 version = "${mc_version}-${mod_version}"
 group = 'net.onvoid.autosmelt' // http://maven.apache.org/guides/mini/guide-naming-conventions.html

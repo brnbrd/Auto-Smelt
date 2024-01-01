@@ -1,8 +1,6 @@
 package net.onvoid.autosmelt.common;
 
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 
@@ -26,10 +24,5 @@ public class AutoSmeltEnchantment extends Enchantment {
     @Override
     protected boolean checkCompatibility(Enchantment enchantment) {
         return super.checkCompatibility(enchantment) && enchantment != Enchantments.SILK_TOUCH;
-    }
-
-    @Override
-    public boolean allowedInCreativeTab(Item book, CreativeModeTab tab) {
-        return tab == CreativeModeTab.TAB_TOOLS || tab == CreativeModeTab.TAB_COMBAT;
     }
 }
